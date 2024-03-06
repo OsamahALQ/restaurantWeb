@@ -1,0 +1,31 @@
+head
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  <link rel="icon" type="image/x-icon" href="/views/images/favicon.ico">
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm' crossorigin='anonymous')
+  script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js' integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN' crossorigin='anonymous')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js' integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q' crossorigin='anonymous')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js' integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl' crossorigin='anonymous')
+
+  link(rel='stylesheet' href='views/app.css')
+  title Users
+.topnav
+  a(href='/') Home
+  a.active(href='/users') Users
+  if !name
+    a(href='/sign_in') Sign In
+    a(href='/sign_up') Sign Up
+  else 
+    a(href='/order') Order
+    a(href='/profile') Profile
+    a(href='/logout') Logout
+    
+body.img3
+h3(style=' margin-top:2%; color:white; text-align: center; vertical-align: middle; font-family: fantasy;') Users List 
+div(style='width: 82em;  height: 85%; opacity: 10; margin-left: 4%; background: rgba(0, 0, 0, 0.5); overflow: scroll; max-height:80%; text-align: center; vertical-align: middle; font-family: fantasy;')
+  if users && users.length > 0 
+    ul.list-group
+    each user  in users
+      li.list-group-item(style='background: rgba(0, 0, 0, -1000)')
+        a(href='/user/'+user.name) #{user.name}
+  else 
+    strong(style='margin-left: 2%; color:white font-family: fantasy;') No users

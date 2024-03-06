@@ -1,0 +1,26 @@
+head
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  <link rel="icon" type="image/x-icon" href="/views/images/favicon.ico"><link rel="icon" type="image/x-icon" href="/views/images/favicon.ico">
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm' crossorigin='anonymous')
+  script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js' integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN' crossorigin='anonymous')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js' integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q' crossorigin='anonymous')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js' integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl' crossorigin='anonymous')
+
+  link(rel='stylesheet' href='views/app.css')
+  title Sign In
+.topnav
+  a(href='/') Home
+  a(href='/users') Users
+  a.active(href='/sign_in') Sign In
+  a(href='/sign_up') Sign Up
+body.img1
+.center(style='padding-left:16px')
+  form(action='/sign_in' method='post')
+    h2(style='color: white; font-family: fantasy;') Sign In
+    .input-field
+      input#username(type='text' name='username' placeholder='Enter Username' style='font-family: fantasy; border-radius: 8px;')
+    .input-field
+      input#password(type='password' name='password' placeholder='Enter Password' style='font-family: fantasy; border-radius: 8px;')
+    input(type='submit' value='LogIn')
+  <p style='color: white; font-family: fantasy;'> don't have an account? <a href='/sign_up' style='color: blue font-family: fantasy;')> Sign up <a> </p>
+.col

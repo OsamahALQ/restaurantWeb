@@ -1,0 +1,152 @@
+.img0{
+  background-image : url("/views/images/img0.jpeg");
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.img{
+  background-image : linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/views/images/imk.jpeg");
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.img1{
+      background-image : url("/views/images/img2.jpeg");
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+}
+.img2{
+  background-image : linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/views/images/immm.jpeg");
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.img3{
+  background-image : url("/views/images/img3.jpeg");
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+body {
+  justify-content: center;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  margin-top: 10%;
+  margin-right: 45%;
+  padding: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.input-field input {
+  padding: 0.8rem;
+}
+
+form .input-field:first-child {
+  margin-bottom: 1.5rem;
+  font-family: fantasy;
+}
+
+form input[type="submit"] {
+  background: linear-gradient(to left, #4776E6, #8e54e9);
+  color: white;
+  border-radius: 8px;
+  margin-top: 2rem;
+  padding: 0.4rem;
+  font-family: fantasy;
+}
+
+.topnav {
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+  font-family: fantasy;
+}
+
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: fantasy;
+}
+
+.topnav button {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: fantasy;
+}
+
+
+.topnav a:hover {
+  background:linear-gradient(to right, #3f3e3e , #929292);
+  color: rgb(0, 0, 0);
+  font-family: fantasy;
+}
+
+
+.topnav a.active {
+  background: linear-gradient(to right, #4776E6, #8e54e9);
+  color: white;
+  font-family: fantasy;
+}
+
+.navbar .dropdown-menu a:hover {
+  color: #8e54e9 !important;
+  font-family: fantasy;
+}
+.darken-grey-text {
+  color: #2E2E2E;
+  font-family: fantasy;
+}
+
+.text{
+  color: #f2f2f2;
+  font-size: 50;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 12%;
+  line-height: 80px;
+  font-family: fantasy;
+}
+.middle {
+  color:rgb(255, 255, 255);
+  background-color: #080808c7;
+  font-family: fantasy;
+  width: 50%;
+  padding: 10px;
+  height: 80%;
+  margin: 20;
+  position: absolute;
+  margin-left:25%;
+  margin-top: 4%;
+  overflow: scroll;
+  }
